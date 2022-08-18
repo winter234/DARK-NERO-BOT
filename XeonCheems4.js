@@ -9050,7 +9050,7 @@ case 'alive': {
        │✑  Please Select
        │✑  The Button Below
        └─────────────┈ ⳹`,
-    footer: `νιнαηgαм∂`,
+    footer: `${botname}`,
     buttons: buttons,
     headerType: 4,
     }
