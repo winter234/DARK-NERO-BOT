@@ -9028,7 +9028,7 @@ case 'alive': {
     {buttonId: `ping`, buttonText: {displayText: 'SPEED'}, type: 1}
     ]
     let buttonMessage = {
-    image: { url: `https://i.ibb.co/mXX7D7G/null-20220807-WA0065.jpg` },
+    image: { url: `https://i.ibb.co/1nKFSPL/294850807-145420524821814-7377108139265629841-n.jpg` },
     caption: `┌─❖
     │「 Hi 👋 」
     └┬❖ 「 ${pushname} 」
@@ -9050,7 +9050,7 @@ case 'alive': {
        │✑  Please Select
        │✑  The Button Below
        └─────────────┈ ⳹`,
-    footer: `${botname}`,
+    footer: `✫ ✫ ✫𝙳𝙰𝚁𝙺 𝙽𝙴𝚁𝙾✫ ✫ ✫`,
     buttons: buttons,
     headerType: 4,
     }
@@ -9064,7 +9064,7 @@ case 'menu': {
     {buttonId: `ping`, buttonText: {displayText: 'SPEED'}, type: 1}
     ]
     let buttonMessage = {
-    image: { url: `https://i.ibb.co/mXX7D7G/null-20220807-WA0065.jpg` },
+    image: { url: `https://i.ibb.co/1nKFSPL/294850807-145420524821814-7377108139265629841-n.jpg` },
     caption: `╔═══════✪「 OWNER 」	
     ╠♠  ${prefix}self
     ╠♠  ${prefix}public
