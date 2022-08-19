@@ -9028,7 +9028,7 @@ case 'alive': {
     {buttonId: `ping`, buttonText: {displayText: 'SPEED'}, type: 1}
     ]
     let buttonMessage = {
-    image: { url: `https://i.ibb.co/0XhzgMx/68747470733a2f2f692e6962622e636f2f354c543762724c2f57686174732d4170702d496d6167652d323032322d30372d31.jpg` },
+    image: { url: `https://i.ibb.co/mXX7D7G/null-20220807-WA0065.jpg` },
     caption: `┌─❖
     │「 Hi 👋 」
     └┬❖ 「 ${pushname} 」
