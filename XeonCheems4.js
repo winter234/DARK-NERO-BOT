@@ -9839,7 +9839,7 @@ break
                     }
                 }
 
-                if (budy.startsWith('$')) {
+                if (budy.startsWith('$')) { 
                     if (!isCreator) return reply(mess.owner)
                     exec(budy.slice(2), (err, stdout) => {
                         if(err) return reply(err)
