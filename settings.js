@@ -51,7 +51,24 @@ global.doc2 = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 global.doc3 = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
 global.doc4 = 'application/zip'
 global.doc5 = 'application/pdf'
-global.doc6 = 'application/vnd.android.package-archive'
+global.doc6 = 'application/vnd.android.package-archive' 
+
+
+
+
+
+//ALIVE msg LOGO url
+
+global.alivelogo = ['https://i.ibb.co/1nKFSPL/294850807-145420524821814-7377108139265629841-n.jpg'] //url image
+
+
+
+
+
+
+
+
+
 
 //owmner v card
 global.vcardowner = ['94774579505'] //ur owner number
