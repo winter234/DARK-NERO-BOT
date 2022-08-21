@@ -366,7 +366,7 @@ XeonBotInc.sendMessage(anu.id, buttonMessage)
      * @param {*} options 
      * @returns 
      */
-    KUMXeonBotIncUTHU.sendImage = async (jid, path, caption = '', quoted = '', options) => {
+    XeonBotInc.sendImage = async (jid, path, caption = '', quoted = '', options) => {
 	let buffer = Buffer.isBuffer(path) ? path : /^data:.*?\/.*?;base64,/i.test(path) ? Buffer.from(path.split`,`[1], 'base64') : /^https?:\/\//.test(path) ? await (await getBuffer(path)) : fs.existsSync(path) ? fs.readFileSync(path) : Buffer.alloc(0)
         return await XeonBotInc.sendMessage(jid, { image: buffer, caption: caption, ...options }, { quoted })
     }
