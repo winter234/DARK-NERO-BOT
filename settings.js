@@ -59,7 +59,7 @@ global.doc6 = 'application/vnd.android.package-archive'
 
 //ALIVE msg LOGO url
 
-global.alivelogo = ['https://i.ibb.co/1nKFSPL/294850807-145420524821814-7377108139265629841-n.jpg'] //ur image
+global.alivelogo = ['https://i.ibb.co/B4ctjMv/kaveesha-img.jpg'] //ur image
 
 
 
