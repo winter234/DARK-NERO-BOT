@@ -324,7 +324,7 @@ XeonBotInc.sendMessage(anu.id, buttonMessage)
             }
             }
             }), options)
-            KUMUXeonBotIncTHU.relayMessage(jid, template.message, { messageId: template.key.id })
+            XeonBotInc.relayMessage(jid, template.message, { messageId: template.key.id })
     }
 
     /**
