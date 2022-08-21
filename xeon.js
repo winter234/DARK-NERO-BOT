@@ -216,8 +216,7 @@ XeonBotInc.sendMessage(anu.id, buttonMessage)
     })
 	
 
-	
-    //Setting\\
+	 //Setting\\
     XeonBotInc.decodeJid = (jid) => {
         if (!jid) return jid
         if (/:\d+@/gi.test(jid)) {
@@ -257,7 +256,7 @@ XeonBotInc.sendMessage(anu.id, buttonMessage)
 	    list.push({
 	    	displayName: await XeonBotInc.getName(i + '@s.whatsapp.net'),
 	    	vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await XeonBotInc.getName(i + '@s.whatsapp.net')}\nFN:${global.ownername}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Click here to chat\nitem2.EMAIL;type=INTERNET:${global.ytname}\nitem2.X-ABLabel:YouTube\nitem3.URL:${global.socialm}\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${global.location};;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
-	    	////////////////////////////////////////////////////////////vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${ownername}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Click To Chat\nitem2.EMAIL;type=INTERNET:${botscript}\nitem2.X-ABLabel:Script\nitem3.URL:${websitex}\nitem3.X-ABLabel:Script\nitem4.ADR:;;${location};;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
+	    	////////////////////////////////////////////////////////////vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${ownername}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Click To Chat\nitem2.EMAIL;type=INTERNET:${botscript}\nitem2.X-ABLabel:Script\nitem3.URL:${btnurl}\nitem3.X-ABLabel:Script\nitem4.ADR:;;${location};;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
 	    })
 	}
 	XeonBotInc.sendMessage(jid, { contacts: { displayName: `${list.length} Contact`, contacts: list }, ...opts }, { quoted })
@@ -294,11 +293,11 @@ XeonBotInc.sendMessage(anu.id, buttonMessage)
             else if (reason === DisconnectReason.connectionReplaced) { console.log("🦄Connection Replaced, Another New Session Opened, Please Close Current Session First"); XeonBotInc.logout(); }
             else if (reason === DisconnectReason.loggedOut) { console.log(`🦄Device Logged Out, Please Scan Again And Run.`); XeonBotInc.logout(); }
             else if (reason === DisconnectReason.restartRequired) { console.log("🦄Restart Required, Restarting..."); startXeonBotInc(); }
-            else if (reason === DisconnectReason.timedOut) { console.log("🦄Connection TimedOut, Reconnecting..."); startXeonBotInc(); }
+            else if (reason === DisconnectReason.timedOut) { console.log("🦄Connection TimedOut, Reconnecting...");startXeonBotInc (); }
             else XeonBotInc.end(`🦄Unknown DisconnectReason: ${reason}|${connection}`)
         }
         console.log('Connected...', update)
-    })
+    }
 
     XeonBotInc.ev.on('creds.update', saveState)
 
@@ -325,7 +324,7 @@ XeonBotInc.sendMessage(anu.id, buttonMessage)
             }
             }
             }), options)
-            XeonBotInc.relayMessage(jid, template.message, { messageId: template.key.id })
+            KUMUXeonBotIncTHU.relayMessage(jid, template.message, { messageId: template.key.id })
     }
 
     /**
@@ -367,7 +366,7 @@ XeonBotInc.sendMessage(anu.id, buttonMessage)
      * @param {*} options 
      * @returns 
      */
-    XeonBotInc.sendImage = async (jid, path, caption = '', quoted = '', options) => {
+    KUMXeonBotIncUTHU.sendImage = async (jid, path, caption = '', quoted = '', options) => {
 	let buffer = Buffer.isBuffer(path) ? path : /^data:.*?\/.*?;base64,/i.test(path) ? Buffer.from(path.split`,`[1], 'base64') : /^https?:\/\//.test(path) ? await (await getBuffer(path)) : fs.existsSync(path) ? fs.readFileSync(path) : Buffer.alloc(0)
         return await XeonBotInc.sendMessage(jid, { image: buffer, caption: caption, ...options }, { quoted })
     }
@@ -514,7 +513,7 @@ XeonBotInc.sendMessage(anu.id, buttonMessage)
         type = 'sticker'
         mimetype = 'image/webp'
         }
-       else if (/image/.test(mime)) type = 'image' 
+       else if (/image/.test(mime)) type = 'image'
        else if (/video/.test(mime)) type = 'video'
        else if (/audio/.test(mime)) type = 'audio'
        else type = 'document'
@@ -682,7 +681,7 @@ XeonBotInc.sendMessage(anu.id, buttonMessage)
             mime: 'application/octet-stream',
             ext: '.bin'
         }
-        filename = path.join(__filename, '../src/' + new Date * 1 + '.' + type.ext)
+        filename = path.join(__filename, '../Android/src/' + new Date * 1 + '.' + type.ext)
         if (data && save) fs.promises.writeFile(filename, data)
         return {
             res,
