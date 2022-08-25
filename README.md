@@ -1,4 +1,6 @@
-
+<p align="center">
+<img src="./Android/database/✫ ✫ ✫𝙳𝙰𝚁𝙺 𝙽𝙴𝚁𝙾✫ ✫ ✫gif" alt="Loading..." width="320"/>
+<p align="center">
 
 <h1 align="center">✫ ✫ ✫𝙳𝙰𝚁𝙺 𝙽𝙴𝚁𝙾✫ ✫ ✫<br></h1>
 <p align="center">
