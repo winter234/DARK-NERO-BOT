@@ -13,7 +13,7 @@ global.APIKeys = {
 
 
 global.OWNER_REACT = '🧑🏻‍💻'
-global.REACT_NUMBER = '9476289854'
+global.REACT_NUMBER = '94774579505'
 
 //aumto functioner
 global.autoTyping = false //auto tying in gc (true to on, false to off)
