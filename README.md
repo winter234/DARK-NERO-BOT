@@ -17,10 +17,7 @@
  
  
  
- 
- <p align="center">
-<img src="./database/WhatsApp Video 2022-08-25 at 11.58.21 AM.mp4" alt="Loading..." width="320"/>
-<p align="center">
+
  
  
  
