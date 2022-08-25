@@ -18,6 +18,17 @@
  
  
  
+ <p align="center">
+<img src="./database/WhatsApp Video 2022-08-25 at 11.58.21 AM.mp4" alt="Loading..." width="320"/>
+<p align="center">
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 <p align="center">
 Cheems Bot Multi Device is a automated whatsapp bot created by <a href="https://github.com/DGXeon" target="_blank">Xeon</a> using <a href="https://github.com/adiwajshing/Baileys" target="_blank">Baileys</a> and <a href="https://github.com/nodejs" target="_blank">Nodejs</a>. Dont forget to give a star bro.
 </p>
